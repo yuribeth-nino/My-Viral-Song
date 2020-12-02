@@ -8,11 +8,12 @@ import { Songs } from 'src/app/models/songs';
 })
 export class SongsComponent implements OnInit {
   songs: Songs;
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  // call method that is in the interface songs which has the voteup ++
+  // call method that is in the interface songs which has the vote up ++
   voteUp() {
     this.songs.voteUp();
   }

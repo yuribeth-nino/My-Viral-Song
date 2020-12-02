@@ -5,7 +5,6 @@ export class Songs {
   artist: string;
   genre: string;
   url: string;
-  eventCode: number;
   votes: number;
 
   // Constructor class song
@@ -28,10 +27,5 @@ export class Songs {
   // Method Auto increment number of vote
   voteUp(): void {
     this.votes++;
-  }
-
-  // Method to split the url
-  domain(): string {
-    return this.url;
   }
 }

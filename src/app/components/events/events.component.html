@@ -1,1 +1,41 @@
 <app-nav-bar></app-nav-bar> <app-side-bar></app-side-bar>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="title">
+        <h1>MyViralSong List</h1>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-8">
+      <div class="party-name">
+        <p>party name</p>
+      </div>
+      <div class="host-name">
+        <p>host name</p>
+      </div>
+      <div class="number-guest">
+        <p>Guests</p>
+      </div>
+    </div>
+    <div class="col">
+      <img
+        src="../../../assets/img/project-icons-27.png"
+        width="60px;"
+        alt="music-icon"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 btn-col">
+      <button type="button" class="btn btn-primary">Request a song</button>
+    </div>
+  </div>
+  <app-songs
+    *ngFor="let songs of songs; let i = index"
+    [songs]="songs"
+  ></app-songs>
+</div>

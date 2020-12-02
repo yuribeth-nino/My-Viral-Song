@@ -12,6 +12,7 @@ import { JoinFormComponent } from './components/join-form/join-form.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { FormsModule } from '@angular/forms';
+import { SongsService } from './services/songs.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { FormsModule } from '@angular/forms';
     SideBarComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
-  providers: [],
+  providers: [SongsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
