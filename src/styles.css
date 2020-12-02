@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
+h4,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --red-primary: #da2d42;
+  --turquoise-secondary: #0b919d;
+  --turquoise-hover: #0daebd;
+  --dark-hover: #1c1c20;
+  --grey-icons: #c6cac0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark-hover);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--red-primary);
+}
+
+.btn-primary {
+  background: var(--turquoise-secondary);
+  border-color: var(--turquoise-secondary);
+}
+
+.btn-primary:hover {
+  background: var(--turquoise-hover);
+  border-color: var(--turquoise-hover);
+}

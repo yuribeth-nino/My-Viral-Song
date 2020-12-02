@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'app-join-form',
   templateUrl: './join-form.component.html',
-  styleUrls: ['./join-form.component.css']
+  styleUrls: ['./join-form.component.css'],
 })
 export class JoinFormComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  hideModal() {
+    $('#joinModal').modal('hide');
   }
-
 }

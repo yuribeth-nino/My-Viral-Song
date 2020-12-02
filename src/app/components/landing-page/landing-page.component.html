@@ -1,1 +1,38 @@
-<p>landing-page works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center">
+        <img
+          class="img-fluid"
+          src="../../../assets/img/logo4LL.png"
+          alt="logo image"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col btn-col">
+      <div class="d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-dark btn-lg"
+          data-toggle="modal"
+          data-target="#createModal"
+        >
+          CREATE EVENT
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark btn-lg"
+          data-toggle="modal"
+          data-target="#joinModal"
+        >
+          JOIN EVENT
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-create-form> </app-create-form>
+<app-join-form></app-join-form>

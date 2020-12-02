@@ -13,7 +13,10 @@ const routes: Routes = [
     path: 'home',
     component: LandingPageComponent,
   },
-  { path: 'home/events', component: EventsComponent },
+  {
+    path: 'home/event',
+    component: EventsComponent,
+  },
 ];
 
 @NgModule({

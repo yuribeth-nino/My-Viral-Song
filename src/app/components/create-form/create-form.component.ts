@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'app-create-form',
   templateUrl: './create-form.component.html',
-  styleUrls: ['./create-form.component.css']
+  styleUrls: ['./create-form.component.css'],
 })
 export class CreateFormComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  hideModal() {
+    $('#createModal').modal('hide');
   }
-
 }

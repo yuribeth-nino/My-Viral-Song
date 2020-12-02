@@ -1,0 +1,9 @@
+.logo {
+  display: flex;
+}
+
+h3 {
+  color: white;
+  margin-top: 6%;
+  padding-left: 0.5rem;
+}

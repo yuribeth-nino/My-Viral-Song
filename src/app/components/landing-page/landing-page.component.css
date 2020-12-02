@@ -1,0 +1,19 @@
+.container {
+  background-image: url(https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  width: 345px;
+}
+
+.d-flex {
+  margin-top: 1rem;
+}
+button {
+  margin-left: 0.5rem;
+}
