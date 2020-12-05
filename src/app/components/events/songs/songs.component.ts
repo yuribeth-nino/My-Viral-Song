@@ -5,10 +5,10 @@ import { Songs } from 'src/app/models/songs';
   selector: 'app-songs',
   templateUrl: './songs.component.html',
   styleUrls: ['./songs.component.css'],
+  inputs: ['song'],
 })
 export class SongsComponent implements OnInit {
   songs: Songs;
-
   constructor() {}
 
   ngOnInit(): void {}

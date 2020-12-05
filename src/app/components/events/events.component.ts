@@ -6,6 +6,7 @@ import { SongsService } from 'src/app/services/songs.service';
   selector: 'app-events',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css'],
+  inputs: ['song'],
 })
 export class EventsComponent implements OnInit {
   songs: Songs[];

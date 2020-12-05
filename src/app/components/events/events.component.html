@@ -34,8 +34,6 @@
       <button type="button" class="btn btn-primary">Request a song</button>
     </div>
   </div>
-  <app-songs
-    *ngFor="let songs of songs; let i = index"
-    [songs]="songs"
-  ></app-songs>
+  <app-songs *ngFor="let song of songs; let i = index" [song]="song">
+  </app-songs>
 </div>

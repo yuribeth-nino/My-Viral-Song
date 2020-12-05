@@ -6,7 +6,7 @@ import { Songs } from '../models/songs';
 })
 export class SongsService {
   songChanged = new EventEmitter<Songs[]>();
-  private song: Songs[] = [
+  private song: any = [
     new Songs(
       'its beginning to look a lot like christmas',
       'Michael Buble',
