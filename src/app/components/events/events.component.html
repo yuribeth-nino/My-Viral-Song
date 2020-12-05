@@ -31,9 +31,20 @@
 
   <div class="row">
     <div class="col-xs-12 btn-col">
-      <button type="button" class="btn btn-primary">Request a song</button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#songModal"
+      >
+        Request a song
+      </button>
     </div>
   </div>
-  <app-songs *ngFor="let song of songs; let i = index" [song]="song">
+  <app-songs
+    *ngFor="let singleSong of sortedSongs(); let i = index"
+    [song]="singleSong"
+  >
   </app-songs>
+  <app-new-song></app-new-song>
 </div>

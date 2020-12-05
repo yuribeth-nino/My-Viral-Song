@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Songs } from 'src/app/models/songs';
 
 @Component({
@@ -8,13 +8,13 @@ import { Songs } from 'src/app/models/songs';
   inputs: ['song'],
 })
 export class SongsComponent implements OnInit {
-  songs: Songs;
+  @Input() song: Songs;
   constructor() {}
 
   ngOnInit(): void {}
 
   // call method that is in the interface songs which has the vote up ++
   voteUp() {
-    this.songs.voteUp();
+    this.song.voteUp();
   }
 }

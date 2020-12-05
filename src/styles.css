@@ -32,12 +32,14 @@ body::-webkit-scrollbar-thumb {
   background: var(--red-primary);
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:active {
   background: var(--turquoise-secondary);
   border-color: var(--turquoise-secondary);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:visited {
   background: var(--turquoise-hover);
   border-color: var(--turquoise-hover);
 }

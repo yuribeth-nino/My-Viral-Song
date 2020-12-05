@@ -4,6 +4,7 @@
   position: fixed;
   margin-top: 10%;
   transition: all 100ms ease-in;
+  z-index: 1;
 }
 
 .sidebar-nav {

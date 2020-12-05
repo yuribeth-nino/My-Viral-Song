@@ -14,8 +14,10 @@ export class EventsComponent implements OnInit {
   constructor(private songService: SongsService) {}
 
   ngOnInit(): void {
-    const list = (this.songs = this.songService.getSong());
-    console.log(list);
+    this.songs = this.songService.getSong();
+    this.songService.songChanged.subscribe((songs: Songs[]) => {
+      this.songs = songs;
+    });
   }
 
   sortedSongs(): Songs[] {

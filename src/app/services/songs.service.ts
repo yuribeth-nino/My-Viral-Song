@@ -6,7 +6,7 @@ import { Songs } from '../models/songs';
 })
 export class SongsService {
   songChanged = new EventEmitter<Songs[]>();
-  private song: any = [
+  private song: Songs[] = [
     new Songs(
       'its beginning to look a lot like christmas',
       'Michael Buble',
@@ -14,8 +14,8 @@ export class SongsService {
       'https://www.youtube.com/watch?v=QJ5DOWPGxwg'
     ),
     new Songs(
-      'Mariah Carey ',
       'All I Want for Christmas Is You',
+      'Mariah Carey ',
       'Pop',
       'https://www.youtube.com/watch?v=aAkMkVFwAoo'
     ),
