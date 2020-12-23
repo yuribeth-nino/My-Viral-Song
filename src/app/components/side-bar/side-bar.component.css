@@ -7,6 +7,13 @@
   z-index: 1;
 }
 
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  .sidebar {
+    width: 5rem;
+    height: 30vh;
+  }
+}
+
 .sidebar-nav {
   list-style: none;
   padding: 0;
@@ -15,6 +22,12 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  .sidebar-nav {
+    height: 100%;
+  }
 }
 
 .side-item {

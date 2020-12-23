@@ -2,9 +2,32 @@
   padding: 3rem 25rem;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .title {
+    padding: 0;
+    margin-left: 15rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  .title {
+    padding: 0;
+    margin-left: 23rem;
+    margin-top: 2rem;
+  }
+}
+
 hr {
   margin-top: -4%;
   max-width: 80%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  hr {
+    margin-top: 2%;
+    max-width: 90%;
+  }
 }
 
 img {
@@ -22,4 +45,16 @@ img {
 
 button {
   padding: 0.5rem 22rem;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  button {
+    padding: 0.5rem 15rem;
+  }
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  button {
+    padding: 0.5rem 20rem;
+  }
 }
